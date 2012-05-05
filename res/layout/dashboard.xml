@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/full_dashboard"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+  <LinearLayout
+    android:id="@+id/mainDashboard"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/action_bar_height"
+    android:background="#545454">
+    <ImageView
+    android:layout_width="160dp"
+    android:layout_height="160dp"
+    android:src="@drawable/dashboard_wp_logo" />
+  </LinearLayout>
+  <include
+    layout="@layout/action_bar"
+    android:id="@+id/dashboardActionBar"
+    android:layout_above="@id/mainDashboard" />
+</RelativeLayout>
